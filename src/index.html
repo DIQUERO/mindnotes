@@ -7,44 +7,86 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MindNotes | App</title>
 
-  <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 <!--- Page header, search , log in -->
   <header>
-    <div>
-      <img src="" alt="">
-      <h1>MindNotes</h1>
-    </div>
-    <div>
-      <button></button>
-      <input type="text" placeholder="Search">
-    </div>
-    <div>
-      <a href="">
-        <img src="" alt="">
-      </a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="" alt="logo">
+          <h1><MindNote></MindNote>s</h1>
+        </div>
+        <div class="col-md-8">
+          <button></button>
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="col-md-2">
+          <a href="">
+            <img src="" alt="sign in">
+          </a>
+        </div>
+      </div>
     </div>
   </header>
   <!--- Main section -->
   <div class="container-fluid">
     <div class="row">
       <!--- Aside -->
-      <div class="col-md-4">
+      <div class="col-md-2">
         <aside>
             <header class="row">
-              <div class="col-md-2 col-md-offset-1">Hola</div>
+              <div class="col-md-2 col-md-offset-1"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
               <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
               <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
               <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
               <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
             </header>
+            <div>
+               <div class="notebooks">
+                <h2>Activities</h2>
+                <span>8:notes</span>
+              </div>  
+              <div class="notebooks">
+                <h2>Activities</h2>
+                <span>8:notes</span>
+              </div>
+              <div class="notebooks">
+                <h2>Activities</h2>
+                <span>8:notes</span>
+              </div>
+            </div>
         </aside>
       </div>
       <!--- Main notes section -->
-      <div class="col-md-8">
-        Mundo
+      <div class="col-md-10">
+        <main>
+          <h1>Notebook Name</h1>
+          <div class="row">
+            <div class="col-md-3">
+              <header>Title</header>
+              <p>Lorem ipsum dolor sit amet</p>
+              <footer>Options for the notes</footer>
+            </div>
+            <div class="col-md-3">
+              <header>Title</header>
+              <p>Lorem ipsum dolor sit amet</p>
+              <footer>Options for the notes</footer>
+            </div>
+            <div class="col-md-3">
+              <header>Title</header>
+              <p>Lorem ipsum dolor sit amet</p>
+              <footer>Options for the notes</footer>
+            </div>
+             <div class="col-md-3">
+              <header>Title</header>
+              <p>Lorem ipsum dolor sit amet</p>
+              <footer>Options for the notes</footer>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   </div>

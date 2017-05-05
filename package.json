@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel server sass",
-    "server": "http-server ./src -p 3000",
+    "server": "http-server ./dist -p 3000",
     "presass": "cp ./src/index.html ./dist/",
     "sass": "node-sass -w ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/  --include-path ./node_modules/   -o ./dist/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
