@@ -1,0 +1,20 @@
+{
+  "name": "sass-architecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server ./dist",
+    "presass": "cp ./src/index.html ./dist/",
+    "sass": "node-sass ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/ -o ./dist/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mauricio Poveda",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2"
+  }
+}
