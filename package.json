@@ -1,20 +1,27 @@
 {
-  "name": "sass-architecture",
-  "version": "1.0.0",
+  "name": "mind-notes",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "",
+    "npm": ""
+  },
   "scripts": {
-    "server": "http-server ./dist",
+    "start": "npm-run-all --parallel server sass",
+    "server": "http-server ./src -p 3000",
     "presass": "cp ./src/index.html ./dist/",
-    "sass": "node-sass ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/ -o ./dist/css/",
+    "sass": "node-sass -w ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/  --include-path ./node_modules/   -o ./dist/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mauricio Poveda",
+  "author": "Cinthya Salazar, Dilan Quesada",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
-    "node-sass": "^4.5.2"
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2"
   }
 }

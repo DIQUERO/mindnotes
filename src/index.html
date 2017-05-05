@@ -5,13 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SASS Project Architecture</title>
+  <title>MindNotes | App</title>
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 
 <body>
-  <h1>SASS Project Architecture</h1>
+<!--- Page header, search , log in -->
+  <header>
+    <div>
+      <img src="" alt="">
+      <h1>MindNotes</h1>
+    </div>
+    <div>
+      <button></button>
+      <input type="text" placeholder="Search">
+    </div>
+    <div>
+      <a href="">
+        <img src="" alt="">
+      </a>
+    </div>
+  </header>
+  <!--- Main section -->
+  <div class="container-fluid">
+    <div class="row">
+      <!--- Aside -->
+      <div class="col-md-4">
+        <aside>
+            <header class="row">
+              <div class="col-md-2 col-md-offset-1">Hola</div>
+              <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+              <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+              <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+              <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+            </header>
+        </aside>
+      </div>
+      <!--- Main notes section -->
+      <div class="col-md-8">
+        Mundo
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
