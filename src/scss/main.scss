@@ -3,11 +3,13 @@
 
 // load vendor libs, but just what you need
 @import "vendor/bootstrap-custom";
-@import "node_modules/font-awesome/scss/font-awesome";
+//@import "/node_modules/font-awesome/scss/font-awesome.scss";
 
 
 // load components
 @import "components/buttons";
+@import "components/header";
+@import "components/aside";
 
 // load components
 @import "pages/home";

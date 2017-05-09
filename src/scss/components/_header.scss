@@ -1,0 +1,16 @@
+.main-header{
+    background-color: $brand-green;
+    
+    .navbar-default{
+        background-color: transparent;
+        border-color: transparent;
+
+        .navbar-brand{
+            color: #FFF;
+             & > img{
+                display: inline;
+            
+            }
+        }
+    }
+}

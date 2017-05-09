@@ -12,7 +12,8 @@
     "server": "http-server ./dist -p 3000",
     "presass": "cp ./src/index.html ./dist/",
     "sass": "node-sass -w ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/  --include-path ./node_modules/   -o ./dist/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "uglifyjs --compress -- node_modules/bootstrap-sass/assets/javascripts/bootstrap.js > dist/js/bootstrap.min.js"
   },
   "author": "Cinthya Salazar, Dilan Quesada",
   "license": "ISC",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.5.2",
-    "npm-run-all": "^4.0.2"
+    "npm-run-all": "^4.0.2",
+    "uglifyjs": "^2.4.10"
   }
 }
