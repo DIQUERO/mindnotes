@@ -18,7 +18,7 @@ for (var i = 0; i < close.length; i++) {
 function openNote(){
     this.classList.add('note-modal');
     this.style.display = 'block';
-    this.childNodes[2].style.display = 'block';
+    this.childNodes[1].childNodes[1].style.display = 'block';
 }
 
 function closeNote(e){
@@ -29,5 +29,5 @@ function closeNote(e){
 
 function deleteNote(e) {
   e.stopPropagation();
-  this.parentNode.parentNode.parentNode.remove();
+  this.parentNode.parentNode.parentNode.parentNode.remove();
 }
