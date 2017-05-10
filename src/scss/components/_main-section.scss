@@ -18,11 +18,11 @@
 }
 
 .note:before {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  //box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
   background: none repeat scroll 0 0 $yellow-corner;
-  /* color esquina */
+  /* Corner color */
   border-color: #FFFFFF #FFFFFF $yellow-corner $yellow-corner;
-  /* color de borde */
+  /* Border Color */
   border-style: solid;
   border-width: 0 16px 16px 0;
   content: "";
@@ -36,7 +36,7 @@
 .note p {
   text-align: justify;
   margin: 0;
-  max-height: 75px;
+  height: 75px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -44,4 +44,25 @@
 .note--title {
   text-align: center;
   font-size: 1.5rem;
+}
+
+//Note's Footer
+.footer {
+  text-align: right;
+  display: none;
+}
+
+.note:hover {
+  .footer {
+    display: block;
+  }
+}
+
+.footer--icon {
+  background: transparent;
+  border: 0;
+}
+
+.footer--icon:focus {
+  outline: 0;
 }
