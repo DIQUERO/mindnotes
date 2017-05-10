@@ -4840,6 +4840,47 @@ tbody.collapse.in {
       right: 5px;
       font-size: 1.2307rem; }
 
+.main--separator {
+  border-bottom: 2px solid #ECECEC;
+  margin-bottom: 1rem; }
+
+.main--title {
+  text-align: center; }
+
+.note {
+  background-color: #FFFF9D;
+  height: 160px;
+  width: 90%;
+  padding: 1rem;
+  border: 2px solid #ffeb3b;
+  position: relative; }
+
+.note:before {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: none repeat scroll 0 0 #ffeb3b;
+  /* color esquina */
+  border-color: #FFFFFF #FFFFFF #ffeb3b #ffeb3b;
+  /* color de borde */
+  border-style: solid;
+  border-width: 0 16px 16px 0;
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 0; }
+
+.note p {
+  text-align: justify;
+  margin: 0;
+  max-height: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.note--title {
+  text-align: center;
+  font-size: 1.5rem; }
+
 :root {
   font-size: 16px; }
 

@@ -11,47 +11,49 @@
 </head>
 
 <body>
-<!--- Page header, search , log in -->
+  <!--- Page header, search , log in -->
   <header class="container-fluid main-header">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-             <a class="navbar-brand" href="#">
-              <img alt="Brand" src="images/brain-circle.png">
-              <h2>MindNotes</h2>
-            </a>
-          </div>
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="images/brain-circle.png">
+            <h2>MindNotes</h2>
+          </a>
+        </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
   </header>
   <!--- Main section -->
   <div class="container-fluid">
@@ -59,50 +61,63 @@
       <!--- Aside -->
       <div class="col-md-2 aside">
         <aside>
-            <header class="row">
-              <div class="col-md-2 col-md-offset-1"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-              <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-              <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-              <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-              <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-            </header>
-            <div>
-               <div class="aside--notebook text-center">
-                <h3>Activities</h3>
-              </div>  
-              <div class="aside--notebook text-center">
-                <h3>Activities</h3>
-              </div>
-              <div class="aside--notebook text-center">
-                <h3>Activities</h3>
-              </div>
+          <header class="row">
+            <div class="col-md-2 col-md-offset-1"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+            <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+            <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+            <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+            <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+          </header>
+          <div>
+            <div class="aside--notebook text-center">
+              <h3>Activities</h3>
             </div>
+            <div class="aside--notebook text-center">
+              <h3>Activities</h3>
+            </div>
+            <div class="aside--notebook text-center">
+              <h3>Activities</h3>
+            </div>
+          </div>
         </aside>
       </div>
       <!--- Main notes section -->
       <div class="col-md-10">
         <main>
-          <h1>Notebook Name</h1>
+          <div class="row main--separator">
+            <div class="col-xs-12">
+              <h1 class="main--title">Notebook Name</h1>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-3">
-              <header>Title</header>
-              <p>Lorem ipsum dolor sit amet</p>
-              <footer>Options for the notes</footer>
+              <div class="note" id="1">
+                <div class="note--title">Title</div>
+                <p>Lorem ipsum dolor sit amet</p>
+                <div class="footer">Options for the notes</div>
+              </div>
             </div>
             <div class="col-md-3">
-              <header>Title</header>
-              <p>Lorem ipsum dolor sit amet</p>
-              <footer>Options for the notes</footer>
+              <div class="note" id="2">
+                <div class="note--title">Title</div>
+                <p>Laboris ex incididunt irure laborum irure id consectetur fugiat commodo occaecat Laboris ex incididunt irure laborum irure id consectetur fugiat commodo occaecat .
+                </p>
+                <div class="footer">Options for the notes</div>
+              </div>
             </div>
             <div class="col-md-3">
-              <header>Title</header>
-              <p>Lorem ipsum dolor sit amet</p>
-              <footer>Options for the notes</footer>
+              <div class="note" id="3">
+                <div class="note--title">Title</div>
+                <p>Lorem ipsum dolor sit amet</p>
+                <div class="footer">Options for the notes</div>
+              </div>
             </div>
-             <div class="col-md-3">
-              <header>Title</header>
-              <p>Lorem ipsum dolor sit amet</p>
-              <footer>Options for the notes</footer>
+            <div class="col-md-3">
+              <div class="note">
+                <div class="note--title">Title</div>
+                <p>Lorem ipsum dolor sit amet</p>
+                <div class="footer">Options for the notes</div>
+              </div>
             </div>
           </div>
         </main>
@@ -110,7 +125,7 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
