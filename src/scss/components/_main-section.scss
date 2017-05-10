@@ -1,3 +1,8 @@
 .main--separator {
-  border: 2px solid $light-gray-border;
+  border-bottom: 2px solid $light-gray-border;
+  margin-bottom: 1rem;
+}
+
+.main--title {
+  text-align: center;
 }
