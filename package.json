@@ -8,6 +8,7 @@
     "npm": ""
   },
   "scripts": {
+    "prestart": "npm run js",
     "start": "npm-run-all --parallel server sass",
     "server": "http-server ./dist -p 3000",
     "presass": "cp ./src/index.html ./dist/",

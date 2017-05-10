@@ -1,4 +1,5 @@
-.main--separator {
+.main--separator,
+.separator {
   border-bottom: 2px solid $light-gray-border;
   margin-bottom: 1rem;
 }
@@ -15,54 +16,48 @@
   padding: 1rem;
   border: 2px solid $yellow-corner;
   position: relative;
-}
-
-.note:before {
-  //box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
-  background: none repeat scroll 0 0 $yellow-corner;
-  /* Corner color */
-  border-color: #FFFFFF #FFFFFF $yellow-corner $yellow-corner;
-  /* Border Color */
-  border-style: solid;
-  border-width: 0 16px 16px 0;
-  content: "";
-  display: block;
-  position: absolute;
-  right: -2px;
-  top: -2px;
-  width: 0;
-}
-
-.note p {
-  text-align: justify;
-  margin: 0;
-  height: 75px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.note--title {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-//Note's Footer
-.footer {
-  text-align: right;
-  display: none;
+  &:before {
+    //box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: none repeat scroll 0 0 $yellow-corner;
+    /* Corner color */
+    border-color: #FFFFFF #FFFFFF $yellow-corner $yellow-corner;
+    /* Border Color */
+    border-style: solid;
+    border-width: 0 16px 16px 0;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 0;
+  }
+  p {
+    text-align: justify;
+    margin: 0;
+    height: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .note--title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  //Note's Footer
+  .footer {
+    text-align: right;
+    display: none;
+    .footer--icon {
+      background: transparent;
+      border: 0;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
 }
 
 .note:hover {
   .footer {
     display: block;
   }
-}
-
-.footer--icon {
-  background: transparent;
-  border: 0;
-}
-
-.footer--icon:focus {
-  outline: 0;
 }
