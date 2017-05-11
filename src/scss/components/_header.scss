@@ -1,13 +1,5 @@
 .main-header {
   background-color: $brand-green;
-  .navbar-default .navbar-collapse,
-  .navbar-default .navbar-form {
-    position: relative;
-    top: 0.3rem;
-    input {
-      width: 20rem;
-    }
-  }
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -34,16 +26,37 @@
     background-color: #00A388;
     color: #fff;
   }
-  .search {
-    position: relative;
-    input {
-      text-indent: 30px;
-    }
-    .fa-search {
-      position: absolute;
-      top: 0.250rem;
-      left: 7px;
-      font-size: 15px;
+  .navbar-form{
+      position: relative;
+      top: 0.3rem;
+      width: 50%;
+      .search {
+      position: relative;
+      .fa-search {
+        position: absolute;
+        top: 0.500rem;
+        left: 0.813rem;
+        font-size: 15px;
+        color: #fff;
+      }
+      input {
+        width: 100%;
+        text-indent: 1.875rem;
+        background-color: #02B799;
+        border: 0;
+        &:focus {
+          background-color: #fff;
+          &::-webkit-input-placeholder {
+            color: black;
+          }
+        }
+        &::-webkit-input-placeholder {
+          color: #fff;
+        }
+      }
+      input:focus ~ span{
+        color: black;
+      }
     }
   }
 }
