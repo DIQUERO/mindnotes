@@ -134,37 +134,29 @@
 }
 
 .default {
-  background-color: #FFFF9D;
+  background-color: $brand-yellow;
   border: 2px solid $yellow-corner;
 }
 
-.blue {
-  background-color: #53A3B4;
-  border: 2px solid #005ED7;
-}
-
+.blue,
 .blue-note {
-  background-color: #53A3B4;
-  border: 2px solid #005ED7;
+  background-color: $light-blue;
+  border: 2px solid $dark-blue;
 }
 
 .blue-note:before {
-  background: none repeat scroll 0 0 #005ED7;
+  background: none repeat scroll 0 0 $dark-blue;
   border-color: #FFFFFF #FFFFFF transparent transparent;
 }
 
-.green {
-  background-color: #97C02F;
-  border: 2px solid #658E15;
-}
-
+.green,
 .green-note {
-  background-color: #97C02F;
-  border: 2px solid #658E15;
+  background-color: $brand-red;
+  border: 2px solid $dark-red;
 }
 
 .green-note:before {
-  background: none repeat scroll 0 0 #658E15;
+  background: none repeat scroll 0 0 $dark-red;
   /* Corner color */
-  border-color: #FFFFFF #FFFFFF #658E15 #658E15;
+  border-color: #FFFFFF #FFFFFF $dark-red $dark-red;
 }
