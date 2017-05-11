@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MindNotes | App</title>
-
+  <link rel="icon" type="image/ico" href="images/favicon.ico" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -24,7 +24,7 @@
               <span class="icon-bar"></span>
             </button>
           <a class="navbar-brand" href="#">
-            <img alt="Brand" src="images/brain-circle.png">
+            <img alt="Brand" src="images/brain-logo.png">
             <h2>MindNotes</h2>
           </a>
         </div>
@@ -32,10 +32,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+            <div class="search">
+              <span class="fa fa-search"></span>
+              <input placeholder="Search term">
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
           </form>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -62,11 +62,11 @@
       <div class="col-md-2 aside">
         <aside>
           <header class="row">
-            <div class="col-md-2 col-md-offset-1"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-            <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-            <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-            <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
-            <div class="col-md-2"><i class="fa fa-address-book-o" aria-hidden="true"></i></div>
+            <div class="col-md-2 col-md-offset-1 fa-1-5"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            <div class="col-md-2 fa-1-5"><i class="fa fa-sticky-note" aria-hidden="true"></i></div>
+            <div class="col-md-2 fa-1-5"><i class="fa fa-book" aria-hidden="true"></i></div>
+            <div class="col-md-2 fa-1-5"><i class="fa fa-bookmark-o" aria-hidden="true"></i></div>
+            <div class="col-md-2 fa-1-5"><i class="fa fa-star-o" aria-hidden="true"></i></div>
           </header>
           <div>
             <div class="aside--notebook text-center">
@@ -90,42 +90,110 @@
             </div>
           </div>
           <div class="row">
+            <!--Notes-->
             <div class="col-md-3">
-              <div class="note" id="1">
-                <div class="note--title">Title</div>
-                <p>Lorem ipsum dolor sit amet</p>
-                <div class="footer">Options for the notes</div>
+              <div class="note-block">
+                <div class="note note-modal--content">
+                  <span class="close">&times;</span>
+                  <div class="note--title">Title</div>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <div class="footer">
+                    <button class="footer--icon btn-color testeo">
+                      <i class="fa fa-paint-brush " aria-hidden="true"></i>
+                    </button>
+                    <button class="footer--icon btn-delete">
+                      <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="row color-picker">
+                    <div class="blue"></div>
+                    <div class="green"></div>
+                    <div class="default"></div>
+                  </div>
+                </div>
               </div>
             </div>
+            <!--end column-3-->
+            <!--Notes-->
             <div class="col-md-3">
-              <div class="note" id="2">
-                <div class="note--title">Title</div>
-                <p>Laboris ex incididunt irure laborum irure id consectetur fugiat commodo occaecat Laboris ex incididunt irure laborum irure id consectetur fugiat commodo occaecat .
-                </p>
-                <div class="footer">Options for the notes</div>
+              <div class="note-block">
+                <div class="note note-modal--content">
+                  <span class="close">&times;</span>
+                  <div class="note--title">Title</div>
+                  <input type="text" value="Lorem ipsum dolor sit amet">
+                  <div class="footer">
+                    <button class="footer--icon btn-color testeo">
+                      <i class="fa fa-paint-brush " aria-hidden="true"></i>
+                    </button>
+                    <button class="footer--icon btn-delete">
+                      <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="row color-picker">
+                    <div class="blue"></div>
+                    <div class="green"></div>
+                    <div class="default"></div>
+                  </div>
+                </div>
               </div>
             </div>
+            <!--end column-3-->
+            <!--Notes-->
             <div class="col-md-3">
-              <div class="note" id="3">
-                <div class="note--title">Title</div>
-                <p>Lorem ipsum dolor sit amet</p>
-                <div class="footer">Options for the notes</div>
+              <div class="note-block">
+                <div class="note note-modal--content">
+                  <span class="close">&times;</span>
+                  <div class="note--title">Title</div>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <div class="footer">
+                    <button class="footer--icon btn-color testeo">
+                      <i class="fa fa-paint-brush " aria-hidden="true"></i>
+                    </button>
+                    <button class="footer--icon btn-delete">
+                      <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="row color-picker">
+                    <div class="blue"></div>
+                    <div class="green"></div>
+                    <div class="default"></div>
+                  </div>
+                </div>
               </div>
             </div>
+            <!--end column-3-->
+            <!--Notes-->
             <div class="col-md-3">
-              <div class="note">
-                <div class="note--title">Title</div>
-                <p>Lorem ipsum dolor sit amet</p>
-                <div class="footer">Options for the notes</div>
+              <div class="note-block">
+                <div class="note note-modal--content">
+                  <span class="close">&times;</span>
+                  <div class="note--title">Title</div>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <div class="footer">
+                    <button class="footer--icon btn-color testeo">
+                      <i class="fa fa-paint-brush " aria-hidden="true"></i>
+                    </button>
+                    <button class="footer--icon btn-delete">
+                      <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div class="row color-picker">
+                    <div class="blue"></div>
+                    <div class="green"></div>
+                    <div class="default"></div>
+                  </div>
+                </div>
               </div>
             </div>
+            <!--end column-3-->
           </div>
         </main>
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="js/main.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet " integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN " crossorigin="anonymous ">
+  <script src="js/main.min.js "></script>
 </body>
 
 </html>

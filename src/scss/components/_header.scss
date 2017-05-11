@@ -24,4 +24,16 @@
       }
     }
   }
+  .search {
+    position: relative;
+    input {
+      text-indent: 30px;
+    }
+    .fa-search {
+      position: absolute;
+      top: 0.250rem;
+      left: 7px;
+      font-size: 15px;
+    }
+  }
 }
