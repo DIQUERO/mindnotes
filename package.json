@@ -8,11 +8,12 @@
     "npm": ""
   },
   "scripts": {
-    "prestart": "npm run js",
-    "start": "npm-run-all --parallel server sass",
+    "prestart": "npm run js && npm run sass",
+    "start": "npm-run-all --parallel server sass-watch",
     "server": "http-server ./dist -p 3000",
     "presass": "cp ./src/index.html ./dist/",
-    "sass": "node-sass -w ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/  --include-path ./node_modules/   -o ./dist/css/",
+    "sass": "node-sass ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/  --include-path ./node_modules/   -o ./dist/css/",
+    "sass-watch": "node-sass -w ./src/scss/main.scss --include-path ./src/scss/ --include-path ./node_modules/bootstrap-sass/assets/stylesheets/  --include-path ./node_modules/   -o ./dist/css/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "js": "uglifyjs --compress -- node_modules/bootstrap-sass/assets/javascripts/bootstrap.js ./src/js/vainilla.js > dist/js/main.min.js"
   },
