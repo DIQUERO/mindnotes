@@ -4,33 +4,24 @@
     background-color: transparent;
     border-color: transparent;
     .navbar-brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       color: #FFF;
       &>img {
-        width: 13%;
-        display: inline;
         position: relative;
-        bottom: 0.5rem;
+        width: calculateRem(45px);
+        top: calculateRem(8px);
       }
       h2 {
-        display: inline;
+        margin-left: calculateRem(4px);
       }
     }
   }
-  //Bootstrap navbar dropdown, customize
-  .navbar-default .navbar-nav>li>a {
-    color: white;
-  }
-  .navbar-default .navbar-nav>.open>a,
-  .navbar-default .navbar-nav>.open>a:hover,
-  .navbar-default .navbar-nav>.open>a:focus {
-    background-color: #00A388;
-    color: #fff;
-  }
-  .navbar-form{
-      position: relative;
-      top: 0.3rem;
-      width: 50%;
-      .search {
+  .navbar-form {
+    margin-top: calculateRem(18px);
+    width: 100%;
+    .search {
       position: relative;
       .fa-search {
         position: absolute;
@@ -54,9 +45,21 @@
           color: #fff;
         }
       }
-      input:focus ~ span{
+      input:focus~span {
         color: black;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .navbar-form {
+    border: 0;
+    padding: 0;
+  }
+  .navbar-brand {
+    h2 {
+      display: none;
     }
   }
 }
