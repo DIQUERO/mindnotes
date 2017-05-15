@@ -5,6 +5,7 @@
 }
 
 .main--title {
+  position: relative;
   text-align: center;
 }
 
@@ -45,12 +46,16 @@
     top: -2px;
     width: 0;
   }
-  p {
-    text-align: justify;
-    margin: 0;
-    height: 75px;
+  textarea {
+    background-color: transparent;
+    height: calc(100% - 45px);
+    width: 100%;
+    resize: none;
+    border: none;
     overflow: hidden;
-    text-overflow: ellipsis;
+    &:focus {
+      outline: 0;
+    }
   }
   .note--title {
     text-align: center;
@@ -159,4 +164,13 @@
   background: none repeat scroll 0 0 $dark-red;
   /* Corner color */
   border-color: #FFFFFF #FFFFFF $dark-red $dark-red;
+}
+
+.row-notes {
+  margin-left: 45px;
+  transition: margin-left 0.5s ease-in;
+}
+
+.row-notes__active {
+  margin-left: 230px;
 }
