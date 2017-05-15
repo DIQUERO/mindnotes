@@ -1,9 +1,10 @@
 .aside {
   position: fixed;
   width: 45px;
-  transition: width 0.5s ease-in;
-  border-right: 1px solid $light-gray-border;
   height: calc(100vh - 72px);
+  margin-top: calculateRem(82px); 
+  border-right: 1px solid $light-gray-border;
+  transition: width 0.5s ease-in;
   header {
     margin-top: 4.5rem;
   }
