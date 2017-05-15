@@ -2,11 +2,11 @@
   position: fixed;
   width: 45px;
   transition: width 0.5s ease-in;
-  header {
-    margin-top: 1.5rem;
-  }
   border-right: 1px solid $light-gray-border;
   height: calc(100vh - 72px);
+  header {
+    margin-top: 4.5rem;
+  }
   .aside--notebook {
     position: relative;
     color: $brand-medium-green;
@@ -43,31 +43,33 @@
 
 .aside__active {
   width: 230px;
+  header{
+    margin-top: 1.5rem;
+  }
   .aside--notebook {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
   }
   .fa-1-5 {
-    margin: 0;
+    margin: 0 calculateRem(6px);
   }
 }
 
 .nav-toggle-pos {
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 20px;
+  left: 6px;
   width: 35px;
   height: 25px;
-  margin: 25px 0px;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
   span {
     display: block;
     position: absolute;
-    height: 5px;
-    width: 100%;
-    background: $brand-medium-green;
+    height: 2px;
+    width: 60%;
+    background: $light-gray-border;
     opacity: 1;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
@@ -75,16 +77,19 @@
       top: 0px;
     }
     &:nth-child(2) {
-      top: 9px;
+      top: 7px;
     }
     &:nth-child(3) {
-      top: 18px;
+      top: 14px;
     }
   }
 }
 
 .toggle-nav_open {
+  top: -6px;
+  left: calculateRem(209px);
   span {
+    width: 45%;
     &:nth-child(1) {
       top: 18px;
       transform: rotate(135deg);
