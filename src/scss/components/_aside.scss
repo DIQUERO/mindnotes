@@ -58,8 +58,8 @@
 
 .nav-toggle-pos {
   position: absolute;
-  top: 20px;
-  left: 6px;
+  top: 40%;
+  left: -3px;
   width: 35px;
   height: 25px;
   transform: rotate(0deg);
@@ -82,26 +82,6 @@
     }
     &:nth-child(3) {
       top: 14px;
-    }
-  }
-}
-
-.toggle-nav_open {
-  top: -6px;
-  left: calculateRem(209px);
-  span {
-    width: 45%;
-    &:nth-child(1) {
-      top: 18px;
-      transform: rotate(135deg);
-    }
-    &:nth-child(2) {
-      opacity: 0;
-      left: -60px;
-    }
-    &:nth-child(3) {
-      top: 18px;
-      transform: rotate(-135deg);
     }
   }
 }
